@@ -1,0 +1,209 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  height: 100vh;
+  background-image: url("ССЫЛКА");
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Центральный блок */
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 120px;
+  padding-top: 196px;
+  width: 100%;
+  margin: 0 auto;
+  background: #E1FF8F;
+}
+
+.hero-text-1 {
+  font-weight: 700;
+  font-style: bold;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-bottom: 48px;
+  width: 769px;
+  height: 156px;
+}
+
+.hero-text-2 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0;
+  width: 720px;
+  height: 64px;
+  margin-bottom: 24px;
+}
+
+.text {
+  Size: 24px;
+  Line-height: 32px;
+  color: #202027;
+  font-size: 32px;
+}
+
+.cta-button {
+  width: 200px;
+  height: 60px;
+  background-color: #000;
+  color: white;
+  border: 2px solid #000;
+  border-radius: 12px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin-top: 48px;
+}
+
+.cta-button:active {
+  background-color: white;
+  color: #000;
+  border-color: #000;
+}
+
+/* Анимированная полоса внизу */
+.scrolling-banner {
+  position: relative;
+  bottom: 0;
+  left: 100%;
+  white-space: nowrap;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 200%;
+  animation: scrollBanner 30s linear infinite;
+  background: #E1FF8F;
+}
+
+.scrolling-banner img {
+  height: 48px;
+}
+
+@keyframes scrollBanner {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
+}
+/* Нижний блок: Об играх */
+.games-section {
+  background-color: #000;
+  color: white;
+  padding: 80px 120px;
+  width: 100%;
+  max-width: 1440px;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.games-section h2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: bold;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-bottom: 24px;
+}
+
+.games-section p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.game-card {
+  background-color: white;
+  border-radius: 30px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+.game-card img {
+  width: 100%;
+  height: auto; /* Сохраняем пропорции */
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex-shrink: 0; /* Не сжимаем изображение */
+}
+
+.game-card.small {
+  height: 473px;
+}
+
+.game-card.large {
+  height: 512px;
+}
+
+.game-tag {
+  width: 108px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 52.58px;
+  padding: 8px 16px 10px 16px;
+  margin: 16px auto;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 0;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-top: 16px;
+  color: black;
+}/*# sourceMappingURL=style.css.map */

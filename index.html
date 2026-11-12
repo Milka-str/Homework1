@@ -5,9 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework1</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+ 
 </head>
 <body>
-   <h1>Домашнее задание</h1>
+  <!-- Центральный блок -->
+  <div class="hero">
+    <h1 class="hero-text-1">Добро пожаловать на мой сайт мини-игр</h1>
+    <p class="hero-text-2">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span class="text">«Поехали!»</span> и <span class="text
+      ">приступай</span>.</p>
+    <button class="cta-button">ПОЕХАЛИ</button>
+  </div>
+
+  <!-- Анимированная полоса внизу -->
+  <div class="scrolling-banner">
+    <img src="Полоса для анимации.png" alt="Изображение">
+    
+  </div>
+
+  <!-- Нижний блок: Об играх -->
+  <section class="games-section">
+    <h2>Об играх</h2>
+    <p>В моей коллекции представлено 6 игр на разные темы. Игры несложные — в них может поиграть каждый. Все игры доступны для пользования.</p>
+    <div class="games-grid">
+      <!-- Карточка 1 -->
+      <div class="game-card small" onclick="window.location.href='game1.html'">
+        <img src="Обложка карточки.png" alt="Игра №1">
+        <div class="game-tag">Игра №1</div>
+        <div class="game-title">Угадай число</div>
+      </div>
+
+      <!-- Карточка 2 -->
+      <div class="game-card large" onclick="window.location.href='game2.html'">
+        <img src="Обложка карточки (1).png" alt="Простая арифметика">
+        <div class="game-tag">Игра №2</div>
+        <div class="game-title">Простая арифметика</div>
+      </div>
+
+      <!-- Карточка 3 -->
+      <div class="game-card small" onclick="window.location.href='game3.html'">
+        <img src="Обложка карточки (2).png" alt="Переверни текст">
+        <div class="game-tag">Игра №3</div>
+        <div class="game-title">Переверни текст</div>
+      </div>
+
+      <!-- Карточка 4 -->
+      <div class="game-card large" onclick="window.location.href='game4.html'">
+        <img src="Обложка карточки (3).png" alt="Камень, ножницы, бумага">
+        <div class="game-tag">Игра №4</div>
+        <div class="game-title">Камень, ножницы, бумага</div>
+      </div>
+
+      <!-- Карточка 5 -->
+      <div class="game-card small" onclick="window.location.href='game5.html'">
+        <img src="Обложка карточки (4).png" alt="Простая викторина">
+        <div class="game-tag">Игра №5</div>
+        <div class="game-title">Простая викторина</div>
+      </div>
+
+      <!-- Карточка 6 -->
+      <div class="game-card large" onclick="window.location.href='game6.html'">
+        <img src="Обложка карточки (5).png" alt="Генератор случайных цветов">
+        <div class="game-tag">Игра №6</div>
+        <div class="game-title">Генератор случайных цветов</div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
