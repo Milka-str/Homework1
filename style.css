@@ -18,6 +18,76 @@ body {
 }
 
 /* Центральный блок */
+.head1 {
+ 
+  left: 1780px;
+  background: #E1FF8F;
+  top: 196px;
+  width: auto;
+  max-width: 1440px;
+  margin-top: auto;
+}
+
+.ollhead {
+  display: flex;
+  align-items: stretch;
+    
+}
+
+.vector-star {
+    width: 1440px;
+    height: 800;
+    display: flex;
+    flex-direction: row;
+}
+
+.head&star {
+  display: flex;
+
+}
+
+.green-vector {
+  display: grid;
+  justify-content: end;
+  background: #E1FF8F;
+}
+
+
+.vectors {
+   border-width: 1px;
+}
+
+.vector4781 {
+  width: 142;
+height: 179;
+top: 254px;
+left: 1067px;
+border-width: 1px;
+
+}
+
+.vector4788 {
+  border-right: 113px;
+  top: 468px;
+  
+}
+.vector4782 {
+  width: 219.88;
+  height: 418;
+  
+ 
+ 
+}
+.vector4791 {
+  width: 34;
+  height: 124;
+  top: 663px;
+  left: 1345px;
+
+  border-width: 1px;
+
+}
+
 .hero {
   flex: 1;
   display: flex;
@@ -25,10 +95,10 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding-left: 120px;
-  padding-top: 196px;
+  
   width: 100%;
   margin: 0 auto;
-  background: #E1FF8F;
+ 
 }
 
 .hero-text-1 {
@@ -37,7 +107,7 @@ body {
   font-size: 64px;
   line-height: 100%;
   letter-spacing: 0;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   width: 769px;
   height: 156px;
 }
@@ -61,18 +131,18 @@ body {
 }
 
 .cta-button {
-  width: 200px;
-  height: 60px;
+  width: 247px;
+  height: 66px;
   background-color: #000;
   color: white;
-  border: 2px solid #000;
-  border-radius: 12px;
+  border: 1px solid #000;
+  border-radius: 60px;
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 20px;
+  font-size: 24px;
   cursor: pointer;
   transition: all 0.15s ease;
-  margin-top: 48px;
+  margin-top: 16px;
 }
 
 .cta-button:active {
@@ -81,20 +151,37 @@ body {
   border-color: #000;
 }
 
+.head1-star3 {
+  margin-top: 69px;
+  padding-left: 156px;
+}
+
+.head1-star2 {
+  margin-top: 97px;
+  padding-left: 63px;
+  padding-bottom: 45px;
+}
+.head1-star4 {
+  margin-top: 14px;
+  padding-left: 1013px;
+}
+
+.head1-star5 {
+  
+  padding-left: 948px;
+}
+
+
 /* Анимированная полоса внизу */
 .scrolling-banner {
   position: relative;
   bottom: 0;
   left: 100%;
   white-space: nowrap;
-  font-size: 24px;
-  font-weight: 700;
   display: flex;
-  align-items: center;
-  height: 80px;
-  width: 200%;
+  align-items: flex-end;
   animation: scrollBanner 30s linear infinite;
-  background: #E1FF8F;
+   padding-top: 59px;
 }
 
 .scrolling-banner img {
@@ -117,9 +204,7 @@ body {
   width: 100%;
   max-width: 1440px;
   margin-top: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ 
 }
 
 .games-section h2 {
@@ -130,6 +215,9 @@ body {
   line-height: 100%;
   letter-spacing: 0;
   margin-bottom: 24px;
+  
+
+
 }
 
 .games-section p {
@@ -140,7 +228,7 @@ body {
   line-height: 32px;
   letter-spacing: 0;
   margin-bottom: 64px;
-  text-align: center;
+  
 }
 
 .games-grid {
@@ -206,4 +294,89 @@ body {
   letter-spacing: 0;
   margin-top: 16px;
   color: black;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*Нижний блок: мини игры*/
+
+.minigames {
+    background-color: #000;
+    color: white;
+    padding: 80px 120px;
+    max-width: 1440px;
+    height: 3310px;
+    margin-top: auto;
+     
+}
+.minigames h3 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: bold;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-bottom: 24px;
+}
+
+.minigames p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0;
+  margin-bottom: 64px;
+  
+}
+
+
+.minigames-card {
+   display: flex;
+    gap: 32px;
+    width: 100%;
+    max-width: 1440px;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+}
+.minigames-card {
+  background-color: white;
+  border-radius: 30px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.minigames-card:hover {
+  transform: translateY(-5px);
+}
+
+.minigames-card img {
+  
+  height: auto; /* Сохраняем пропорции */
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex-shrink: 0; /* Не сжимаем изображение */
+}
+
+.minigames-card.small {
+  height: 473px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.minigames-card.large {
+  height: 512px;
+  display: flex;
+  flex-direction: row;
+}
+
+.minigames-title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-top: 16px;
+  color: black;
+}
